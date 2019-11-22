@@ -16,7 +16,7 @@ import com.zaxxer.hikari.HikariDataSource;
 @MapperScan(basePackages = {"com.hamuse.web"})
 @ComponentScan(basePackages = {"com.hamuse.web"})
 @Import({
-	MybatisConfig.class , ServletConfig.class
+	Mybatisconfig.class , ServletConfig.class
 })
 public class RootConfig {
 		@Bean

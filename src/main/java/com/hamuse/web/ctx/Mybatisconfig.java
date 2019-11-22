@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @MapperScan(basePackages= {"com.hamuse.web"})
-public class MybatisConfig {
+public class Mybatisconfig {
 	@Autowired
 	ApplicationContext applicationContext;
 	

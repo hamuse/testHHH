@@ -1,6 +1,6 @@
 package com.hamuse.web.user;
 
-import java.util.HashMap;
+import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
@@ -15,4 +15,5 @@ public interface UserMapper {
 	    public void dropUser(HashMap<String,String> paramMap);
 	    public void truncateUser(HashMap<String,String> paramMap);*/
 	    public int rowCount();
+	    public List<User> selectAll();
 }

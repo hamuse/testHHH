@@ -20,7 +20,7 @@ pop = {
      },
      view : ()=>{
     	 return '<div style="width:300px;margin:auto;">'+
-    	 '<h1 >'+
+    	 '<h1 style="color: aliceblue;" >'+
     	 '     Hello Hamuse!'+
     	 '</h1>'+
     	 '<span><a class="popup-modal" href= "#login-modal">로그인</a ><span style="display: inline-block;width:100px"></span>'+

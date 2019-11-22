@@ -37,7 +37,7 @@ app = (()=>{
 	}
 	let setContentView=()=>{
 		$('body').css({
-			'background-image':'url("resources/img/sea.jpg")'
+			'background-image':'url("resources/img/catStrar.jpg")'
 				,'background-repeat':'no-repeat' //반복없앰 , 이미지 사이즈 작을때 바둑판으로 안되게
 				,'background-position':'center' // 이미지 중간
 				,'background-size':'cover' // 이미지 전체크기로 
@@ -73,11 +73,13 @@ app = (()=>{
 				width : '100%',
 				height : '33.5%',
 				border : '3px solid white',
+				color: 'antiquewhite',
 				'text-align':'center'
 			})
 			.appendTo('#left')
 			.click(function(){
-				$(this).css({'background-color':'#53CBE6'})
+			$(this).css({'background-color':'darkorchid'})
+				/*$(this).css({'background-color':'#53CBE6'})*/
 				$(this).siblings().css({'background-color': 'unset'})
 //				$(this).siblings().css({'background-color': '#FFFFFF', opacity: '0.1'})
 //				$(this).siblings().css({'background-color': '#FFFFFF', opacity: '0.5'})
@@ -98,6 +100,7 @@ app = (()=>{
 								height:'40%',
 								border:'3px solid white',
 								float : 'left',
+								color: 'antiquewhite',
 								'text-align':'center'
 							})
 							.appendTo('#right')
@@ -114,6 +117,7 @@ app = (()=>{
 							.css({
 								border :'3px solid white',
 								float :'left',
+								color: 'antiquewhite',
 								'text-align' : 'center'
 							})
 							.appendTo('#right')	
@@ -310,7 +314,8 @@ app = (()=>{
 				.css({
 					width : '25%',
 					height : '100%',
-					border : '3px solid white'
+					border : '3px solid white',
+					color: 'antiquewhite'
 				})
 				.appendTo('#head')
 			})
@@ -319,6 +324,7 @@ app = (()=>{
 				.css({
 					width : '25%',
 					height : '100%',
+					color: 'antiquewhite',
 					'text-align' : 'center',
 					border : '3px solid white'
 					})
@@ -330,13 +336,13 @@ app = (()=>{
 				width :'50%',
                 height: '50px',
                 margin:'20px auto',
+                color: 'antiquewhite',
                 	'text-align' : 'center'
 			})
 			.appendTo('#right')
 			// 자바스크립트는 int i = 0 ; 이 아니라  let i = 0 이렇게 줘야한다. 
 			if(pager.existPrev){
 				$('<span/>')
-				
 				.css({
 					width :'30px',
                     height: '30px',
@@ -374,7 +380,9 @@ app = (()=>{
 					width :'30px',
                     height: '30px',
                     display: 'inline-block', // span width 값 먹히게 하는것 없으면 잘안먹힘
+                    color: 'antiquewhite',
                     border:'3px solid white'
+                    	
                     	
 				})
 				.text('Next')
